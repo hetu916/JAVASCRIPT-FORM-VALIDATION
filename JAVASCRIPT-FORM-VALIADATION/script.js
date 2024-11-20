@@ -11,7 +11,9 @@ function seterror(id, error) {
 
 }
 
-function validateForm() {
+document.querySelector('.btn').addEventListener('click',function(e){
+    e.defaultPrevented;
+
 
     clearErrors();
     var name = document.getElementById('inputname').value;
@@ -50,7 +52,7 @@ function validateForm() {
     return returnval;
 
 
-};
+});
 
 
 
