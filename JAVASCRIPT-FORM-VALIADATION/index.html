@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css">
+
+    <title>javascript form validation</title>
+</head>
+
+<body style="background-color: rgb(44, 41, 41);">
+
+    <div class="container"
+        style="background-color:rgb(181, 180, 209); padding:50px;margin-top: 30px; border-radius: 10px;">
+        <form action="myaction.html" name="myForm" onsubmit="validateForm()" method="GET">
+
+            <h1 style="text-align: center; padding-bottom: 25px;">Registration Form</h1>
+            <div class="form-row ">
+                <div class="form-group col-md-6" id="name">
+                    <b><label for="inputEmail4">Name</label></b>
+                    <input type="text" name="fname" class="form-control" id="inputname" required>
+                    <B><span class="formerror"></span></B>
+                </div>
+
+
+                <div class="form-group col-md-6" id="email">
+                    <b> <label for="inputEmail4">Email</label></b>
+                    <input type="email" name="femail" class="form-control" id="inputEmail" required>
+                    <B><span class="formerror"></span></B>
+                </div>
+
+
+
+                <div class="form-group col-md-6" id="password">
+                    <b> <label for="inputPassword4">Password</label></b>
+                    <input type="password" name="fpass" class="form-control" id="inputPass" required>
+                    <B><span class="formerror"></span></B>
+                </div>
+
+
+
+                <div class="form-group col-md-6" id="phone">
+                    <b> <label for="inputPassword">Phone</label></b>
+                    <input type="text" class="form-control" name="fphone" id="inputPhone4" required>
+                    <B><span class="formerror"></span></B>
+                </div>
+            </div>
+            <div class="form-group" id="add">
+                <b> <label for="inputAddress">Address</label></b>
+                <input type="text" name="add" class="form-control" id="inputAddress" required>
+                <B><span class="formerror"></span></B>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6" id="city">
+                    <b> <label for="inputCity">City</label></b>
+                    <input type="text" name="fcity" class="form-control" id="inputCity" required>
+                    <B><span class="formerror"></span></B>
+                </div>
+
+
+            </div>
+
+            <button type="submit" class="btn btn-dark" value="submit"><b>Submit</b></button>
+
+        </form>
+    </div>
+
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="./script.js"></script>
+
+</html>
